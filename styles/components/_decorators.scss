@@ -1,0 +1,25 @@
+.decorators {
+  @include takeWholeScreen;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    display: block;
+    @include takeWholeScreen;
+    background: $blue-950;
+    opacity: 0.8;
+    z-index: 2;
+  }
+
+  &__person {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__dots {
+    display: none;
+  }
+}

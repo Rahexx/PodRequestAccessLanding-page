@@ -1,0 +1,10 @@
+.logo {
+  position: relative;
+  z-index: 4;
+
+  &__img {
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+  }
+}
