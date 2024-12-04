@@ -1,0 +1,38 @@
+.listOfPlatforms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 17px;
+  margin-bottom: $space-40;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__icon {
+    display: inline-block;
+
+    &--spotify {
+      height: 16.95px;
+      width: 55.94px;
+    }
+
+    &--apple {
+      height: 17px;
+      width: 45px;
+    }
+
+    &--google {
+      height: 10.67px;
+      width: 72.97px;
+    }
+
+    &--pocket {
+      height: 14.9px;
+      width: 75.88px;
+    }
+  }
+}

@@ -1,10 +1,12 @@
 .logo {
   position: relative;
+  margin-top: $space-116;
+  text-align: center;
   z-index: 4;
 
   &__img {
     display: inline-block;
-    height: 40px;
-    width: 100px;
+    height: 56px;
+    width: 134.86px;
   }
 }

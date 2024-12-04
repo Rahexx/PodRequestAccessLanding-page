@@ -3,3 +3,46 @@
 @import 'styles/utilities/mixins';
 @import 'styles/components/decorators';
 @import 'styles/components/logo';
+@import 'styles/components/form';
+@import 'styles/components/platforms';
+
+.container {
+  font-family: $font-primary;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: $space-56 auto 0;
+  width: 302px;
+  z-index: 4;
+
+  &__title {
+    color: $green;
+    font-size: $font-size-l;
+    line-height: $line-height-120;
+    font-weight: $font-weight-light;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--white {
+      color: $white;
+    }
+  }
+
+  &__text {
+    margin-top: $space-16;
+    color: $blue-300;
+    font-size: $font-size-s;
+    font-weight: $font-weight-light;
+    line-height: $line-height-150;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: $space-40;
+  }
+}
