@@ -6,7 +6,9 @@
 @import 'styles/components/form';
 @import 'styles/components/platforms';
 
-.container {
+.container,
+input,
+button {
   font-family: $font-primary;
 }
 

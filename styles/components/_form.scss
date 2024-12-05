@@ -1,4 +1,52 @@
 .form {
   display: flex;
   flex-direction: column;
+  margin-bottom: $space-142;
+
+  &__error {
+    display: none;
+    margin-top: $space-8;
+    text-align: center;
+    color: $red;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-bold;
+  }
+
+  &__input,
+  &__submit {
+    height: 44px;
+    width: 100%;
+    font-size: $font-size-s;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-200;
+    border-radius: 100px;
+  }
+
+  &__input {
+    margin-bottom: $space-8;
+    padding: $space-4 $space-4 $space-4 $space-32;
+    border: 2px solid $blue-900;
+    background: $blue-900;
+    color: $white;
+  }
+
+  &__submit {
+    background: $green;
+    color: $blue-950;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      background: $green-accent;
+    }
+  }
+
+  &--error &__input {
+    border: 2px solid $red;
+  }
+
+  &--error &__error {
+    display: block;
+  }
 }
