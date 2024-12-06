@@ -6,6 +6,9 @@
 @import 'styles/components/form';
 @import 'styles/components/platforms';
 
+.container {
+  overflow: hidden;
+}
 .container,
 input,
 button {
@@ -46,5 +49,36 @@ button {
     display: flex;
     flex-direction: column-reverse;
     margin-top: $space-40;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .container {
+    background: $blue-950;
+  }
+
+  .content {
+    margin: 0 0 0 $space-44;
+    padding-top: $space-88;
+    width: 77%;
+    background: $blue-950;
+
+    &__title {
+      width: 528px;
+      font-size: $font-size-xl;
+      text-align: start;
+    }
+
+    &__text {
+      width: 448px;
+      margin-top: $space-24;
+      font-size: $font-size-m;
+      text-align: start;
+    }
+
+    &__form {
+      flex-direction: column;
+      margin: $space-40 0 $space-156;
+    }
   }
 }

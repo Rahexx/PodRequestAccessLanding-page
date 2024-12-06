@@ -36,3 +36,41 @@
     }
   }
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .listOfPlatforms {
+    justify-content: space-between;
+    align-items: center;
+    height: 53px;
+    width: 547.65px;
+    margin-bottom: 0;
+
+    &__item {
+      display: flex;
+      align-items: flex-end;
+      height: 100%;
+    }
+
+    &__icon {
+      &--spotify {
+        height: 28.91px;
+        width: 95.9px;
+      }
+
+      &--apple {
+        height: 29px;
+        width: 78px;
+      }
+
+      &--google {
+        height: 17.47px;
+        width: 124.95px;
+      }
+
+      &--pocket {
+        height: 25.83px;
+        width: 128.8px;
+      }
+    }
+  }
+}

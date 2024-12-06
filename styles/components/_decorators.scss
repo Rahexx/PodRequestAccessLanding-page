@@ -17,9 +17,45 @@
     display: inline-block;
     height: 100%;
     width: 100%;
+    object-fit: cover;
+  }
+}
+
+.dots {
+  display: none;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .decorators {
+    position: absolute;
+    overflow: visible;
+    left: 40%;
+    height: 868px;
+
+    &::before {
+      position: absolute;
+      left: 40%;
+      height: 868px;
+      background: $green;
+      opacity: 0.1;
+    }
   }
 
-  &__dots {
-    display: none;
+  .dots {
+    position: absolute;
+    display: inline-block;
+    height: 104px;
+    width: 128px;
+    z-index: 12;
+    right: 0;
+    bottom: -52px;
+    overflow: hidden;
+
+    &__image {
+      display: inline-block;
+      margin-left: $space-24;
+      height: 104px;
+      width: 232px;
+    }
   }
 }

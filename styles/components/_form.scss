@@ -35,7 +35,7 @@
     color: $blue-950;
     border: none;
     cursor: pointer;
-    transition: 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
 
     &:hover {
       background: $green-accent;
@@ -48,5 +48,37 @@
 
   &--error &__error {
     display: block;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .form {
+    position: relative;
+    margin-bottom: $space-40;
+    height: 52px;
+    width: 448px;
+
+    &__error {
+      position: absolute;
+      bottom: -24px;
+      left: 0;
+      margin-left: $space-32;
+      text-align: start;
+    }
+
+    &__input {
+      height: 52px;
+      width: 100%;
+      margin-bottom: 0;
+      padding: $space-8 $space-8 $space-8 $space-32;
+    }
+
+    &__submit {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      height: 44px;
+      width: 173px;
+    }
   }
 }
