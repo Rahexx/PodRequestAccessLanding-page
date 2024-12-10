@@ -30,12 +30,12 @@
     position: absolute;
     overflow: visible;
     left: 40%;
-    height: 868px;
+    height: $decorationSize-tablet;
 
     &::before {
       position: absolute;
       left: 0;
-      height: 868px;
+      height: $decorationSize-tablet;
       background: $green;
       opacity: 0.1;
     }
@@ -57,5 +57,38 @@
       height: 104px;
       width: 232px;
     }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .decorators {
+    top: $space-156;
+    left: 38%;
+    height: $decorationSize-desktop;
+    width: 960px;
+
+    &::before {
+      height: $decorationSize-desktop;
+    }
+  }
+
+  .dots {
+    width: 232px;
+    right: 0;
+    bottom: -52px;
+    margin-right: calc((100vw - 38vw - 960px) * -1);
+    overflow: hidden;
+
+    &__image {
+      margin-left: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-extra-large) {
+  .dots {
+    margin-right: 0;
   }
 }

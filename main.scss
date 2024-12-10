@@ -82,3 +82,19 @@ button {
     }
   }
 }
+
+@media (min-width: $breakpoint-desktop) {
+  .content {
+    width: 51%;
+  }
+}
+
+@media (min-width: $breakpoint-desktop-large) {
+  .content {
+    margin: 0 0 0 $space-156;
+
+    &__title {
+      width: 665px;
+    }
+  }
+}

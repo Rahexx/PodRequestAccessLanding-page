@@ -17,3 +17,9 @@
     text-align: start;
   }
 }
+
+@media (min-width: $breakpoint-desktop-large) {
+  .logo {
+    margin: $space-156 0 $space-104 $space-156;
+  }
+}
