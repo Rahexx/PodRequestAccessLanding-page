@@ -42,8 +42,11 @@
     }
   }
 
-  &--error &__input {
+  &--error &__input,
+  &--error &__input:focus,
+  &--error &__input:focus-visible {
     border: 2px solid $red;
+    outline: none;
   }
 
   &--error &__error {
