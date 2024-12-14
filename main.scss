@@ -1,0 +1,100 @@
+@import 'styles/base/reset';
+@import 'styles/utilities/variables';
+@import 'styles/utilities/mixins';
+@import 'styles/components/decorators';
+@import 'styles/components/logo';
+@import 'styles/components/form';
+@import 'styles/components/platforms';
+
+.container {
+  overflow: hidden;
+}
+.container,
+input,
+button {
+  font-family: $font-primary;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: $space-56 auto 0;
+  width: 302px;
+  z-index: 4;
+
+  &__title {
+    color: $green;
+    font-size: $font-size-l;
+    line-height: $line-height-120;
+    font-weight: $font-weight-light;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--white {
+      color: $white;
+    }
+  }
+
+  &__text {
+    margin-top: $space-16;
+    color: $blue-300;
+    font-size: $font-size-s;
+    font-weight: $font-weight-light;
+    line-height: $line-height-150;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: $space-40;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .container {
+    background: $blue-950;
+  }
+
+  .content {
+    margin: 0 0 0 $space-44;
+    padding-top: $space-88;
+    width: 77%;
+    background: $blue-950;
+
+    &__title {
+      width: 528px;
+      font-size: $font-size-xl;
+      text-align: start;
+    }
+
+    &__text {
+      width: 448px;
+      margin-top: $space-24;
+      font-size: $font-size-m;
+      text-align: start;
+    }
+
+    &__form {
+      flex-direction: column;
+      margin: $space-40 0 $space-156;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .content {
+    width: 51%;
+  }
+}
+
+@media (min-width: $breakpoint-desktop-large) {
+  .content {
+    margin: 0 0 0 $space-156;
+
+    &__title {
+      width: 665px;
+    }
+  }
+}

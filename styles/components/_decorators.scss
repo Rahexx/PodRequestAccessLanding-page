@@ -1,0 +1,94 @@
+.decorators {
+  @include takeWholeScreen;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    display: block;
+    @include takeWholeScreen;
+    background: $blue-950;
+    opacity: 0.9;
+    z-index: 2;
+  }
+
+  &__person {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.dots {
+  display: none;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .decorators {
+    position: absolute;
+    overflow: visible;
+    left: 40%;
+    height: $decorationSize-tablet;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      height: $decorationSize-tablet;
+      background: $green;
+      opacity: 0.1;
+    }
+  }
+
+  .dots {
+    position: absolute;
+    display: inline-block;
+    height: 104px;
+    width: 128px;
+    z-index: 12;
+    right: 0;
+    bottom: -52px;
+    overflow: hidden;
+
+    &__image {
+      display: inline-block;
+      margin-left: $space-24;
+      height: 104px;
+      width: 232px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .decorators {
+    top: $space-156;
+    left: 38%;
+    height: $decorationSize-desktop;
+    width: 960px;
+
+    &::before {
+      height: $decorationSize-desktop;
+    }
+  }
+
+  .dots {
+    width: 232px;
+    right: 0;
+    bottom: -52px;
+    margin-right: calc((100vw - 38vw - 960px) * -1);
+    overflow: hidden;
+
+    &__image {
+      margin-left: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-extra-large) {
+  .dots {
+    margin-right: 0;
+  }
+}

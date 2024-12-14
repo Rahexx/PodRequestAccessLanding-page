@@ -1,0 +1,25 @@
+.logo {
+  position: relative;
+  margin-top: $space-116;
+  text-align: center;
+  z-index: 4;
+
+  &__img {
+    display: inline-block;
+    height: 56px;
+    width: 134.86px;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .logo {
+    margin: $space-156 0 $space-104 $space-44;
+    text-align: start;
+  }
+}
+
+@media (min-width: $breakpoint-desktop-large) {
+  .logo {
+    margin: $space-156 0 $space-104 $space-156;
+  }
+}
