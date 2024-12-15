@@ -62,12 +62,13 @@
 
 @media (min-width: $breakpoint-desktop) {
   .decorators {
-    top: $space-156;
+    top: $space-116;
     left: 38%;
     height: $decorationSize-desktop;
     width: 960px;
 
     &::before {
+      display: none;
       height: $decorationSize-desktop;
     }
   }

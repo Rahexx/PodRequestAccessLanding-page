@@ -73,12 +73,13 @@
 }
 @media (min-width: 1200px) {
   .decorators {
-    top: 156px;
+    top: 116px;
     left: 38%;
     height: 654px;
     width: 960px;
   }
   .decorators::before {
+    display: none;
     height: 654px;
   }
   .dots {
@@ -113,13 +114,13 @@
 
 @media (min-width: 768px) {
   .logo {
-    margin: 156px 0 104px 44px;
+    margin: 116px 0 104px 44px;
     text-align: start;
   }
 }
 @media (min-width: 1400px) {
   .logo {
-    margin: 156px 0 104px 156px;
+    margin: 116px 0 104px 156px;
   }
 }
 .form {
