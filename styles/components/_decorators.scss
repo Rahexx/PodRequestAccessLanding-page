@@ -71,6 +71,11 @@
       display: none;
       height: $decorationSize-desktop;
     }
+
+    &__person {
+      position: absolute;
+      right: calc((100vw - 38vw - 960px) * -1);
+    }
   }
 
   .dots {
@@ -89,7 +94,16 @@
 }
 
 @media (min-width: $breakpoint-extra-large) {
+  .decorators {
+    left: 33.33%;
+    width: 66.66%;
+
+    &__person {
+      object-position: top;
+    }
+  }
+
   .dots {
-    margin-right: 0;
+    margin-right: calc((100vw - 33.33vw - 66.66vw) * -1);
   }
 }

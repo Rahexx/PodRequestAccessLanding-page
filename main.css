@@ -82,6 +82,10 @@
     display: none;
     height: 654px;
   }
+  .decorators__person {
+    position: absolute;
+    right: calc((62vw - 960px) * -1);
+  }
   .dots {
     width: 232px;
     right: 0;
@@ -96,8 +100,15 @@
   }
 }
 @media (min-width: 1540px) {
+  .decorators {
+    left: 33.33%;
+    width: 66.66%;
+  }
+  .decorators__person {
+    object-position: top;
+  }
   .dots {
-    margin-right: 0;
+    margin-right: -0.01vw;
   }
 }
 .logo {
