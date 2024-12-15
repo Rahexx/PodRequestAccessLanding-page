@@ -6,9 +6,6 @@
 @import 'styles/components/form';
 @import 'styles/components/platforms';
 
-.container {
-  overflow: hidden;
-}
 .container,
 input,
 button {
@@ -84,6 +81,10 @@ button {
 }
 
 @media (min-width: $breakpoint-desktop) {
+  .container {
+    overflow: hidden;
+  }
+
   .content {
     width: 51%;
   }

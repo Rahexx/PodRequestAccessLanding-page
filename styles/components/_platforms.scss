@@ -7,18 +7,6 @@
   margin-bottom: $space-40;
   list-style: none;
 
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: $blue-950;
-    opacity: 0.5;
-  }
-
   &__item {
     display: flex;
     align-items: center;
@@ -57,6 +45,18 @@
     height: 53px;
     width: 547.65px;
     margin-bottom: 0;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $blue-950;
+      opacity: 0.5;
+    }
 
     &__item {
       display: flex;
