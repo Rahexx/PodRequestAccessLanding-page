@@ -147,6 +147,7 @@
   margin-bottom: 8px;
   padding: 4px 4px 4px 32px;
   border: 2px solid hsl(225, 26%, 23%);
+  outline: none;
   background: hsl(225, 26%, 23%);
   color: hsl(0, 0%, 100%);
 }
@@ -205,17 +206,6 @@
   margin-bottom: 40px;
   list-style: none;
 }
-.listOfPlatforms::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: hsl(224, 35%, 11%);
-  opacity: 0.5;
-}
 .listOfPlatforms__item {
   display: flex;
   align-items: center;
@@ -249,6 +239,17 @@
     width: 547.65px;
     margin-bottom: 0;
   }
+  .listOfPlatforms::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: hsl(224, 35%, 11%);
+    opacity: 0.5;
+  }
   .listOfPlatforms__item {
     display: flex;
     align-items: flex-end;
@@ -271,10 +272,6 @@
     width: 128.8px;
   }
 }
-.container {
-  overflow: hidden;
-}
-
 .container,
 input,
 button {
@@ -341,6 +338,9 @@ button {
   }
 }
 @media (min-width: 1200px) {
+  .container {
+    overflow: hidden;
+  }
   .content {
     width: 51%;
   }
